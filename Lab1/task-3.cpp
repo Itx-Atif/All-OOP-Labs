@@ -1,7 +1,7 @@
 # Task 3: 
  
 # Write a returning function strLength which takes only one char* as parameter and returns the length of the array. Its prototype should be: 
-int strLength(const char* src); 
+
 ```
 #include<iostream>
 using namespace std;
