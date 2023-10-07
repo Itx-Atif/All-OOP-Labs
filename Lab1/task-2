@@ -1,0 +1,33 @@
+# Task 2: 
+ 
+# Write a returning function to find a certain element in an integer array by mentioning the position of that element in the array.
+
+#include<iostream>
+using namespace std;
+int pos(int*,int);
+int main()
+{
+	/*Task Write a returning function to find a certain element in an integer array by mentioning the position of that element in the array.*/
+	int arr[4] = { 1,2,3,4 };
+	int* arr1 = arr;
+	int p,e;
+	for (int i = 0;i < 4;i++)
+	{
+		cout << arr[i]<<" ";
+	}
+	cout << "which element you wnt to find: ";
+	cin >> e;
+	p=pos(arr1,e);
+	cout << "the element "<<e<<" is at " << p << " index of array";
+	return 0;
+}
+int pos(int* a,int e)
+{
+	for (int i = 0;i < 4;i++)
+	{
+		if (a[i] == e)
+		{
+			return i;
+		}
+	}
+}
